@@ -1,0 +1,10 @@
+schema_version: 20180708
+name: heartrate_sensor
+version: 0.0.7
+runtime: go
+entrypoint: ./func
+format: http-stream
+triggers:
+- name: heartrate_sensor-trigger
+  type: http
+  source: /heartrate_sensor-trigger
